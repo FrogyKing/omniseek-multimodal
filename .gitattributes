@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# Preserve the exact source bytes associated with recorded embedding hashes.
+assets/demo/** -text whitespace=cr-at-eol
+*.npz -text
+*.png -text

@@ -1,0 +1,18 @@
+OmniSeek integrates EmbeddingGemma 2, developed by Google DeepMind and distributed
+under Apache License 2.0. Model weights are downloaded separately and are not
+included in this repository.
+https://huggingface.co/google/embeddinggemma-2
+
+The SentenceTransformer integration follows the public Google documentation:
+https://ai.google.dev/gemma/docs/embeddinggemma/multimodal-embeddinggemma-with-sentence-transformers
+Google documentation code samples are available under Apache License 2.0.
+
+FAISS is developed by Meta and contributors, under the MIT license.
+https://github.com/facebookresearch/faiss
+
+Lucide icons are used under the ISC license.
+https://lucide.dev/license
+
+All dependencies retain their respective licenses. Demo assets are dedicated to
+CC0; see assets/demo/LICENSE.txt. Generated embedding fixtures are derived from
+these original assets using the separately distributed model.

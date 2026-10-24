@@ -1,0 +1,11 @@
+CC0 1.0 Universal
+
+To the extent possible under law, the author of the original programmatically
+generated assets in this directory has waived all copyright and related or
+neighboring rights to those assets under CC0 1.0 Universal.
+
+https://creativecommons.org/publicdomain/zero/1.0/
+
+The images, synthesized sounds, animations, prose, and small source examples are
+created by scripts/generate_demo.py. No third-party media is downloaded.
+transition.mp4 is an additional temporal diagnostic, outside the 12-file demo.

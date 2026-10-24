@@ -1,0 +1,135 @@
+{
+  "captured_at": "2026-10-24T06:40:13.729644+00:00",
+  "provider": "Modal authenticated workspace billing API",
+  "gross_project_app_cost_usd": 0.05357479,
+  "workspace_net_billed_usd_at_snapshot": 0.0,
+  "conservative_reserved_usd": 3.40153,
+  "storage_reserve_usd": 0.5,
+  "note": "Provider snapshot may be revised; app receipts include CPU, memory, GPU and egress. Ongoing model-volume storage is separate. Net billing includes workspace credits.",
+  "receipts": [
+    {
+      "object_id": "ap-0gyAEAGkAj0NjC2T1bLn0Z",
+      "description": "omniseek-embeddings",
+      "environment_name": "main",
+      "interval_start": "2026-10-24 06:00:00+00:00",
+      "cost": "0.00499076",
+      "cost_by_resource": {
+        "Network Egress": "1.6E-7",
+        "Memory": "0.00042666",
+        "CPU": "0.00063066",
+        "T4": "0.00393328"
+      },
+      "tags": {}
+    },
+    {
+      "object_id": "ap-5rORLKsktLXxp2ulrpJXHi",
+      "description": "omniseek-embeddings",
+      "environment_name": "main",
+      "interval_start": "2026-10-24 06:00:00+00:00",
+      "cost": "0.00415903",
+      "cost_by_resource": {
+        "Network Egress": "2.7E-7",
+        "Memory": "0.00035554",
+        "CPU": "0.00052554",
+        "T4": "0.00327767"
+      },
+      "tags": {}
+    },
+    {
+      "object_id": "ap-BGZBLk6q7gXRFtR3JLR7JM",
+      "description": "omniseek-embeddings",
+      "environment_name": "main",
+      "interval_start": "2026-10-24 06:00:00+00:00",
+      "cost": "0.00852106",
+      "cost_by_resource": {
+        "L4": "0.00711112",
+        "Network Egress": "1.5E-7",
+        "Memory": "0.00056889",
+        "CPU": "0.00084089"
+      },
+      "tags": {}
+    },
+    {
+      "object_id": "ap-IzWSwOQ5qBOpdg9kpbIDAH",
+      "description": "omniseek-embeddings",
+      "environment_name": "main",
+      "interval_start": "2026-10-24 06:00:00+00:00",
+      "cost": "0.00355569",
+      "cost_by_resource": {
+        "Network Egress": "0.00010878",
+        "Memory": "0.00006867",
+        "CPU": "0.00337824"
+      },
+      "tags": {}
+    },
+    {
+      "object_id": "ap-JQhjUra9hjz4VklUWXPwaI",
+      "description": "omniseek-embeddings",
+      "environment_name": "main",
+      "interval_start": "2026-10-24 06:00:00+00:00",
+      "cost": "0.00542836",
+      "cost_by_resource": {
+        "Network Egress": "1.5E-7",
+        "Memory": "0.00046407",
+        "CPU": "0.00068596",
+        "T4": "0.00427818"
+      },
+      "tags": {}
+    },
+    {
+      "object_id": "ap-Zj2gGlwP5lfVMbP2hJbunp",
+      "description": "omniseek-embeddings",
+      "environment_name": "main",
+      "interval_start": "2026-10-24 06:00:00+00:00",
+      "cost": "0.00415919",
+      "cost_by_resource": {
+        "Network Egress": "1.5E-7",
+        "Memory": "0.00035557",
+        "CPU": "0.00052557",
+        "T4": "0.00327790"
+      },
+      "tags": {}
+    },
+    {
+      "object_id": "ap-dczDpJc4arJv7hFvobXv7d",
+      "description": "omniseek-embeddings",
+      "environment_name": "main",
+      "interval_start": "2026-10-24 06:00:00+00:00",
+      "cost": "0.00395868",
+      "cost_by_resource": {
+        "Network Egress": "0.00022458",
+        "Memory": "0.00020704",
+        "CPU": "0.00352705"
+      },
+      "tags": {}
+    },
+    {
+      "object_id": "ap-hY5WBgaBVTub1HkCA4aTmS",
+      "description": "omniseek-embeddings",
+      "environment_name": "main",
+      "interval_start": "2026-10-24 06:00:00+00:00",
+      "cost": "0.00916156",
+      "cost_by_resource": {
+        "Network Egress": "5.3E-7",
+        "Memory": "0.00078389",
+        "CPU": "0.00116607",
+        "T4": "0.00721107"
+      },
+      "tags": {}
+    },
+    {
+      "object_id": "ap-xfSUYKZ2xjG94TpcXouhuI",
+      "description": "omniseek-embeddings",
+      "environment_name": "main",
+      "interval_start": "2026-10-24 06:00:00+00:00",
+      "cost": "0.00964046",
+      "cost_by_resource": {
+        "Network Egress": "0.00034565",
+        "Memory": "0.00053286",
+        "CPU": "0.00439199",
+        "T4": "0.00436995"
+      },
+      "tags": {}
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "uploaded_modalities": [
+    "text",
+    "code",
+    "image",
+    "audio",
+    "video"
+  ],
+  "indexed_segments": 6,
+  "new_query_gpu_executed": true,
+  "top_result": "door.png",
+  "score": 0.781795859336853,
+  "restart_without_gpu_passed": true,
+  "job_message": "Indexed 6 segments"
+}

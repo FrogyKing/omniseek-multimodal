@@ -1,0 +1,93 @@
+{
+  "license": "CC0-1.0",
+  "seed": 42,
+  "description": "Original programmatically generated diagnostic fixtures; not a general retrieval benchmark.",
+  "files": [
+    "aurora.md",
+    "ocean.md",
+    "deployment.md",
+    "retry.py",
+    "normalize.py",
+    "mountain.png",
+    "door.png",
+    "ocean.png",
+    "bell.wav",
+    "noise.wav",
+    "bouncing-ball.mp4",
+    "sailboat.mp4"
+  ],
+  "queries": [
+    {
+      "text": "What causes the northern lights?",
+      "relevant": [
+        "aurora.md"
+      ],
+      "modality": "text"
+    },
+    {
+      "text": "A sailboat on the blue ocean",
+      "relevant": [
+        "ocean.md",
+        "ocean.png",
+        "sailboat.mp4"
+      ],
+      "modality": "mixed"
+    },
+    {
+      "text": "A red door",
+      "relevant": [
+        "door.png"
+      ],
+      "modality": "image"
+    },
+    {
+      "text": "Snow covered mountains",
+      "relevant": [
+        "mountain.png"
+      ],
+      "modality": "image"
+    },
+    {
+      "text": "A red ball bouncing",
+      "relevant": [
+        "bouncing-ball.mp4"
+      ],
+      "modality": "video"
+    },
+    {
+      "text": "A ringing bell",
+      "relevant": [
+        "bell.wav"
+      ],
+      "modality": "audio"
+    },
+    {
+      "text": "Random static white noise",
+      "relevant": [
+        "noise.wav"
+      ],
+      "modality": "audio"
+    },
+    {
+      "text": "Find the function that retries failed API requests",
+      "relevant": [
+        "retry.py"
+      ],
+      "modality": "code"
+    },
+    {
+      "text": "Normalize a vector to unit length",
+      "relevant": [
+        "normalize.py"
+      ],
+      "modality": "code"
+    },
+    {
+      "text": "How to roll back a production deployment",
+      "relevant": [
+        "deployment.md"
+      ],
+      "modality": "text"
+    }
+  ]
+}

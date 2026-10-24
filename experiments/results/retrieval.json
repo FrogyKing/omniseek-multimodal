@@ -1,0 +1,2419 @@
+{
+  "status": "measured",
+  "dataset": "12 original CC0 diagnostic assets, 10 hand-authored queries",
+  "relevance_unit": "file, max segment score; all indexed modalities searched",
+  "hardware": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "faiss_version": "1.15.1",
+  "threads": 1,
+  "repeats": 100,
+  "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+  "results": [
+    {
+      "dimension": 768,
+      "index": "FlatIP",
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "top3_overlap_with_768": 1.0,
+      "vector_bytes": 43008,
+      "index_bytes": 43053,
+      "build_ms": 0.03950006794184446,
+      "query_ms_median": 0.0011300027836114168,
+      "query_ms_p95": 0.0013599987141788006,
+      "by_modality": {
+        "text": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "code": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "image": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "audio": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "video": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "mixed": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      },
+      "per_query": [
+        {
+          "query": "What causes the northern lights?",
+          "modality": "text",
+          "ranking": [
+            "aurora.md",
+            "noise.wav",
+            "mountain.png",
+            "bouncing-ball.mp4",
+            "ocean.md",
+            "bell.wav",
+            "normalize.py",
+            "ocean.png",
+            "door.png",
+            "retry.py",
+            "sailboat.mp4",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A sailboat on the blue ocean",
+          "modality": "mixed",
+          "ranking": [
+            "ocean.md",
+            "sailboat.mp4",
+            "ocean.png",
+            "noise.wav",
+            "bell.wav",
+            "mountain.png",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "normalize.py",
+            "door.png",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A red door",
+          "modality": "image",
+          "ranking": [
+            "door.png",
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "noise.wav",
+            "ocean.md",
+            "retry.py",
+            "sailboat.mp4",
+            "normalize.py",
+            "ocean.png",
+            "mountain.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Snow covered mountains",
+          "modality": "image",
+          "ranking": [
+            "mountain.png",
+            "noise.wav",
+            "ocean.md",
+            "normalize.py",
+            "ocean.png",
+            "sailboat.mp4",
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "aurora.md",
+            "retry.py",
+            "door.png",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A red ball bouncing",
+          "modality": "video",
+          "ranking": [
+            "bouncing-ball.mp4",
+            "door.png",
+            "noise.wav",
+            "bell.wav",
+            "sailboat.mp4",
+            "ocean.md",
+            "retry.py",
+            "ocean.png",
+            "normalize.py",
+            "mountain.png",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A ringing bell",
+          "modality": "audio",
+          "ranking": [
+            "bell.wav",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "ocean.md",
+            "sailboat.mp4",
+            "door.png",
+            "ocean.png",
+            "mountain.png",
+            "retry.py",
+            "normalize.py",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Random static white noise",
+          "modality": "audio",
+          "ranking": [
+            "noise.wav",
+            "ocean.md",
+            "bell.wav",
+            "retry.py",
+            "sailboat.mp4",
+            "bouncing-ball.mp4",
+            "normalize.py",
+            "ocean.png",
+            "mountain.png",
+            "door.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Find the function that retries failed API requests",
+          "modality": "code",
+          "ranking": [
+            "retry.py",
+            "noise.wav",
+            "bell.wav",
+            "deployment.md",
+            "bouncing-ball.mp4",
+            "normalize.py",
+            "sailboat.mp4",
+            "ocean.md",
+            "door.png",
+            "mountain.png",
+            "ocean.png",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Normalize a vector to unit length",
+          "modality": "code",
+          "ranking": [
+            "normalize.py",
+            "noise.wav",
+            "mountain.png",
+            "bell.wav",
+            "ocean.png",
+            "sailboat.mp4",
+            "bouncing-ball.mp4",
+            "door.png",
+            "retry.py",
+            "ocean.md",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "How to roll back a production deployment",
+          "modality": "text",
+          "ranking": [
+            "deployment.md",
+            "retry.py",
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "noise.wav",
+            "door.png",
+            "normalize.py",
+            "sailboat.mp4",
+            "ocean.png",
+            "mountain.png",
+            "ocean.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      ]
+    },
+    {
+      "dimension": 768,
+      "index": "HNSW",
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "top3_overlap_with_768": 1.0,
+      "vector_bytes": 43008,
+      "index_bytes": 45346,
+      "build_ms": 0.3562000347301364,
+      "query_ms_median": 0.0016600009985268116,
+      "query_ms_p95": 0.005271993577480314,
+      "by_modality": {
+        "text": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "code": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "image": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "audio": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "video": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "mixed": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      },
+      "per_query": [
+        {
+          "query": "What causes the northern lights?",
+          "modality": "text",
+          "ranking": [
+            "aurora.md",
+            "noise.wav",
+            "mountain.png",
+            "bouncing-ball.mp4",
+            "ocean.md",
+            "bell.wav",
+            "normalize.py",
+            "ocean.png",
+            "door.png",
+            "retry.py",
+            "sailboat.mp4",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A sailboat on the blue ocean",
+          "modality": "mixed",
+          "ranking": [
+            "ocean.md",
+            "sailboat.mp4",
+            "ocean.png",
+            "noise.wav",
+            "bell.wav",
+            "mountain.png",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "normalize.py",
+            "door.png",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A red door",
+          "modality": "image",
+          "ranking": [
+            "door.png",
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "noise.wav",
+            "ocean.md",
+            "retry.py",
+            "sailboat.mp4",
+            "normalize.py",
+            "ocean.png",
+            "mountain.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Snow covered mountains",
+          "modality": "image",
+          "ranking": [
+            "mountain.png",
+            "noise.wav",
+            "ocean.md",
+            "normalize.py",
+            "ocean.png",
+            "sailboat.mp4",
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "aurora.md",
+            "retry.py",
+            "door.png",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A red ball bouncing",
+          "modality": "video",
+          "ranking": [
+            "bouncing-ball.mp4",
+            "door.png",
+            "noise.wav",
+            "bell.wav",
+            "sailboat.mp4",
+            "ocean.md",
+            "retry.py",
+            "ocean.png",
+            "normalize.py",
+            "mountain.png",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A ringing bell",
+          "modality": "audio",
+          "ranking": [
+            "bell.wav",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "ocean.md",
+            "sailboat.mp4",
+            "door.png",
+            "ocean.png",
+            "mountain.png",
+            "retry.py",
+            "normalize.py",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Random static white noise",
+          "modality": "audio",
+          "ranking": [
+            "noise.wav",
+            "ocean.md",
+            "bell.wav",
+            "retry.py",
+            "sailboat.mp4",
+            "bouncing-ball.mp4",
+            "normalize.py",
+            "ocean.png",
+            "mountain.png",
+            "door.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Find the function that retries failed API requests",
+          "modality": "code",
+          "ranking": [
+            "retry.py",
+            "noise.wav",
+            "bell.wav",
+            "deployment.md",
+            "bouncing-ball.mp4",
+            "normalize.py",
+            "sailboat.mp4",
+            "ocean.md",
+            "door.png",
+            "mountain.png",
+            "ocean.png",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Normalize a vector to unit length",
+          "modality": "code",
+          "ranking": [
+            "normalize.py",
+            "noise.wav",
+            "mountain.png",
+            "bell.wav",
+            "ocean.png",
+            "sailboat.mp4",
+            "bouncing-ball.mp4",
+            "door.png",
+            "retry.py",
+            "ocean.md",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "How to roll back a production deployment",
+          "modality": "text",
+          "ranking": [
+            "deployment.md",
+            "retry.py",
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "noise.wav",
+            "door.png",
+            "normalize.py",
+            "sailboat.mp4",
+            "ocean.png",
+            "mountain.png",
+            "ocean.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      ]
+    },
+    {
+      "dimension": 512,
+      "index": "FlatIP",
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "top3_overlap_with_768": 0.9333333333333332,
+      "vector_bytes": 28672,
+      "index_bytes": 28717,
+      "build_ms": 0.03400002606213093,
+      "query_ms_median": 0.0013100099749863148,
+      "query_ms_p95": 0.0014199991710484028,
+      "by_modality": {
+        "text": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "code": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "image": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "audio": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "video": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "mixed": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      },
+      "per_query": [
+        {
+          "query": "What causes the northern lights?",
+          "modality": "text",
+          "ranking": [
+            "aurora.md",
+            "noise.wav",
+            "mountain.png",
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "ocean.md",
+            "ocean.png",
+            "retry.py",
+            "normalize.py",
+            "door.png",
+            "sailboat.mp4",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A sailboat on the blue ocean",
+          "modality": "mixed",
+          "ranking": [
+            "ocean.md",
+            "sailboat.mp4",
+            "ocean.png",
+            "noise.wav",
+            "bell.wav",
+            "mountain.png",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "normalize.py",
+            "door.png",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A red door",
+          "modality": "image",
+          "ranking": [
+            "door.png",
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "noise.wav",
+            "ocean.md",
+            "retry.py",
+            "sailboat.mp4",
+            "normalize.py",
+            "ocean.png",
+            "mountain.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Snow covered mountains",
+          "modality": "image",
+          "ranking": [
+            "mountain.png",
+            "noise.wav",
+            "ocean.md",
+            "ocean.png",
+            "normalize.py",
+            "sailboat.mp4",
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "aurora.md",
+            "door.png",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A red ball bouncing",
+          "modality": "video",
+          "ranking": [
+            "bouncing-ball.mp4",
+            "door.png",
+            "noise.wav",
+            "bell.wav",
+            "sailboat.mp4",
+            "retry.py",
+            "ocean.md",
+            "ocean.png",
+            "normalize.py",
+            "mountain.png",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A ringing bell",
+          "modality": "audio",
+          "ranking": [
+            "bell.wav",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "ocean.md",
+            "door.png",
+            "sailboat.mp4",
+            "ocean.png",
+            "retry.py",
+            "mountain.png",
+            "normalize.py",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Random static white noise",
+          "modality": "audio",
+          "ranking": [
+            "noise.wav",
+            "bell.wav",
+            "retry.py",
+            "ocean.md",
+            "normalize.py",
+            "bouncing-ball.mp4",
+            "sailboat.mp4",
+            "mountain.png",
+            "ocean.png",
+            "door.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "Find the function that retries failed API requests",
+          "modality": "code",
+          "ranking": [
+            "retry.py",
+            "noise.wav",
+            "bell.wav",
+            "deployment.md",
+            "bouncing-ball.mp4",
+            "normalize.py",
+            "sailboat.mp4",
+            "ocean.md",
+            "ocean.png",
+            "door.png",
+            "mountain.png",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Normalize a vector to unit length",
+          "modality": "code",
+          "ranking": [
+            "normalize.py",
+            "noise.wav",
+            "bell.wav",
+            "ocean.png",
+            "sailboat.mp4",
+            "mountain.png",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "door.png",
+            "ocean.md",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "How to roll back a production deployment",
+          "modality": "text",
+          "ranking": [
+            "deployment.md",
+            "retry.py",
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "noise.wav",
+            "normalize.py",
+            "door.png",
+            "sailboat.mp4",
+            "ocean.png",
+            "mountain.png",
+            "ocean.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      ]
+    },
+    {
+      "dimension": 512,
+      "index": "HNSW",
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "top3_overlap_with_768": 0.9333333333333332,
+      "vector_bytes": 28672,
+      "index_bytes": 31010,
+      "build_ms": 0.11850008741021156,
+      "query_ms_median": 0.001950003206729889,
+      "query_ms_p95": 0.002112493384629488,
+      "by_modality": {
+        "text": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "code": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "image": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "audio": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "video": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        "mixed": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      },
+      "per_query": [
+        {
+          "query": "What causes the northern lights?",
+          "modality": "text",
+          "ranking": [
+            "aurora.md",
+            "noise.wav",
+            "mountain.png",
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "ocean.md",
+            "ocean.png",
+            "retry.py",
+            "normalize.py",
+            "door.png",
+            "sailboat.mp4",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A sailboat on the blue ocean",
+          "modality": "mixed",
+          "ranking": [
+            "ocean.md",
+            "sailboat.mp4",
+            "ocean.png",
+            "noise.wav",
+            "bell.wav",
+            "mountain.png",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "normalize.py",
+            "door.png",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A red door",
+          "modality": "image",
+          "ranking": [
+            "door.png",
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "noise.wav",
+            "ocean.md",
+            "retry.py",
+            "sailboat.mp4",
+            "normalize.py",
+            "ocean.png",
+            "mountain.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Snow covered mountains",
+          "modality": "image",
+          "ranking": [
+            "mountain.png",
+            "noise.wav",
+            "ocean.md",
+            "ocean.png",
+            "normalize.py",
+            "sailboat.mp4",
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "aurora.md",
+            "door.png",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A red ball bouncing",
+          "modality": "video",
+          "ranking": [
+            "bouncing-ball.mp4",
+            "door.png",
+            "noise.wav",
+            "bell.wav",
+            "sailboat.mp4",
+            "retry.py",
+            "ocean.md",
+            "ocean.png",
+            "normalize.py",
+            "mountain.png",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A ringing bell",
+          "modality": "audio",
+          "ranking": [
+            "bell.wav",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "ocean.md",
+            "door.png",
+            "sailboat.mp4",
+            "ocean.png",
+            "retry.py",
+            "mountain.png",
+            "normalize.py",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Random static white noise",
+          "modality": "audio",
+          "ranking": [
+            "noise.wav",
+            "bell.wav",
+            "retry.py",
+            "ocean.md",
+            "normalize.py",
+            "bouncing-ball.mp4",
+            "sailboat.mp4",
+            "mountain.png",
+            "ocean.png",
+            "door.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "Find the function that retries failed API requests",
+          "modality": "code",
+          "ranking": [
+            "retry.py",
+            "noise.wav",
+            "bell.wav",
+            "deployment.md",
+            "bouncing-ball.mp4",
+            "normalize.py",
+            "sailboat.mp4",
+            "ocean.md",
+            "ocean.png",
+            "door.png",
+            "mountain.png",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Normalize a vector to unit length",
+          "modality": "code",
+          "ranking": [
+            "normalize.py",
+            "noise.wav",
+            "bell.wav",
+            "ocean.png",
+            "sailboat.mp4",
+            "mountain.png",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "door.png",
+            "ocean.md",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "How to roll back a production deployment",
+          "modality": "text",
+          "ranking": [
+            "deployment.md",
+            "retry.py",
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "noise.wav",
+            "normalize.py",
+            "door.png",
+            "sailboat.mp4",
+            "ocean.png",
+            "mountain.png",
+            "ocean.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      ]
+    },
+    {
+      "dimension": 256,
+      "index": "FlatIP",
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.4,
+      "mrr": 0.95,
+      "ndcg_at_3": 0.9630929753571458,
+      "top3_overlap_with_768": 0.8333333333333333,
+      "vector_bytes": 14336,
+      "index_bytes": 14381,
+      "build_ms": 0.015199999324977398,
+      "query_ms_median": 0.000700005330145359,
+      "query_ms_p95": 0.0007300055585801601,
+      "by_modality": {
+        "text": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "code": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "image": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 0.75,
+          "ndcg_at_3": 0.8154648767857288,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "audio": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "video": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        "mixed": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      },
+      "per_query": [
+        {
+          "query": "What causes the northern lights?",
+          "modality": "text",
+          "ranking": [
+            "aurora.md",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "mountain.png",
+            "retry.py",
+            "ocean.png",
+            "ocean.md",
+            "door.png",
+            "normalize.py",
+            "sailboat.mp4",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "A sailboat on the blue ocean",
+          "modality": "mixed",
+          "ranking": [
+            "ocean.md",
+            "sailboat.mp4",
+            "ocean.png",
+            "bell.wav",
+            "noise.wav",
+            "mountain.png",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "normalize.py",
+            "door.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A red door",
+          "modality": "image",
+          "ranking": [
+            "door.png",
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "noise.wav",
+            "retry.py",
+            "ocean.md",
+            "normalize.py",
+            "sailboat.mp4",
+            "ocean.png",
+            "mountain.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Snow covered mountains",
+          "modality": "image",
+          "ranking": [
+            "noise.wav",
+            "mountain.png",
+            "ocean.png",
+            "bouncing-ball.mp4",
+            "aurora.md",
+            "bell.wav",
+            "normalize.py",
+            "ocean.md",
+            "sailboat.mp4",
+            "retry.py",
+            "door.png",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 0.5,
+          "ndcg_at_3": 0.6309297535714575,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "A red ball bouncing",
+          "modality": "video",
+          "ranking": [
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "noise.wav",
+            "door.png",
+            "sailboat.mp4",
+            "retry.py",
+            "ocean.md",
+            "ocean.png",
+            "normalize.py",
+            "mountain.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "A ringing bell",
+          "modality": "audio",
+          "ranking": [
+            "bell.wav",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "ocean.md",
+            "door.png",
+            "sailboat.mp4",
+            "retry.py",
+            "ocean.png",
+            "aurora.md",
+            "mountain.png",
+            "normalize.py",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Random static white noise",
+          "modality": "audio",
+          "ranking": [
+            "noise.wav",
+            "retry.py",
+            "ocean.md",
+            "bell.wav",
+            "normalize.py",
+            "bouncing-ball.mp4",
+            "sailboat.mp4",
+            "ocean.png",
+            "mountain.png",
+            "door.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "Find the function that retries failed API requests",
+          "modality": "code",
+          "ranking": [
+            "retry.py",
+            "noise.wav",
+            "bell.wav",
+            "deployment.md",
+            "bouncing-ball.mp4",
+            "normalize.py",
+            "ocean.md",
+            "door.png",
+            "sailboat.mp4",
+            "ocean.png",
+            "mountain.png",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Normalize a vector to unit length",
+          "modality": "code",
+          "ranking": [
+            "normalize.py",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "ocean.png",
+            "bell.wav",
+            "mountain.png",
+            "door.png",
+            "sailboat.mp4",
+            "retry.py",
+            "ocean.md",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "How to roll back a production deployment",
+          "modality": "text",
+          "ranking": [
+            "deployment.md",
+            "retry.py",
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "noise.wav",
+            "door.png",
+            "normalize.py",
+            "sailboat.mp4",
+            "ocean.png",
+            "mountain.png",
+            "aurora.md",
+            "ocean.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      ]
+    },
+    {
+      "dimension": 256,
+      "index": "HNSW",
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.4,
+      "mrr": 0.95,
+      "ndcg_at_3": 0.9630929753571458,
+      "top3_overlap_with_768": 0.8333333333333333,
+      "vector_bytes": 14336,
+      "index_bytes": 16674,
+      "build_ms": 0.08439994417130947,
+      "query_ms_median": 0.001610000617802143,
+      "query_ms_p95": 0.0017200014553964138,
+      "by_modality": {
+        "text": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "code": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "image": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 0.75,
+          "ndcg_at_3": 0.8154648767857288,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "audio": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "video": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        "mixed": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      },
+      "per_query": [
+        {
+          "query": "What causes the northern lights?",
+          "modality": "text",
+          "ranking": [
+            "aurora.md",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "mountain.png",
+            "retry.py",
+            "ocean.png",
+            "ocean.md",
+            "door.png",
+            "normalize.py",
+            "sailboat.mp4",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "A sailboat on the blue ocean",
+          "modality": "mixed",
+          "ranking": [
+            "ocean.md",
+            "sailboat.mp4",
+            "ocean.png",
+            "bell.wav",
+            "noise.wav",
+            "mountain.png",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "normalize.py",
+            "door.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A red door",
+          "modality": "image",
+          "ranking": [
+            "door.png",
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "noise.wav",
+            "retry.py",
+            "ocean.md",
+            "normalize.py",
+            "sailboat.mp4",
+            "ocean.png",
+            "mountain.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Snow covered mountains",
+          "modality": "image",
+          "ranking": [
+            "noise.wav",
+            "mountain.png",
+            "ocean.png",
+            "bouncing-ball.mp4",
+            "aurora.md",
+            "bell.wav",
+            "normalize.py",
+            "ocean.md",
+            "sailboat.mp4",
+            "retry.py",
+            "door.png",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 0.5,
+          "ndcg_at_3": 0.6309297535714575,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "A red ball bouncing",
+          "modality": "video",
+          "ranking": [
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "noise.wav",
+            "door.png",
+            "sailboat.mp4",
+            "retry.py",
+            "ocean.md",
+            "ocean.png",
+            "normalize.py",
+            "mountain.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "A ringing bell",
+          "modality": "audio",
+          "ranking": [
+            "bell.wav",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "ocean.md",
+            "door.png",
+            "sailboat.mp4",
+            "retry.py",
+            "ocean.png",
+            "aurora.md",
+            "mountain.png",
+            "normalize.py",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Random static white noise",
+          "modality": "audio",
+          "ranking": [
+            "noise.wav",
+            "retry.py",
+            "ocean.md",
+            "bell.wav",
+            "normalize.py",
+            "bouncing-ball.mp4",
+            "sailboat.mp4",
+            "ocean.png",
+            "mountain.png",
+            "door.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "Find the function that retries failed API requests",
+          "modality": "code",
+          "ranking": [
+            "retry.py",
+            "noise.wav",
+            "bell.wav",
+            "deployment.md",
+            "bouncing-ball.mp4",
+            "normalize.py",
+            "ocean.md",
+            "door.png",
+            "sailboat.mp4",
+            "ocean.png",
+            "mountain.png",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Normalize a vector to unit length",
+          "modality": "code",
+          "ranking": [
+            "normalize.py",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "ocean.png",
+            "bell.wav",
+            "mountain.png",
+            "door.png",
+            "sailboat.mp4",
+            "retry.py",
+            "ocean.md",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "How to roll back a production deployment",
+          "modality": "text",
+          "ranking": [
+            "deployment.md",
+            "retry.py",
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "noise.wav",
+            "door.png",
+            "normalize.py",
+            "sailboat.mp4",
+            "ocean.png",
+            "mountain.png",
+            "aurora.md",
+            "ocean.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      ]
+    },
+    {
+      "dimension": 128,
+      "index": "FlatIP",
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "top3_overlap_with_768": 0.8,
+      "vector_bytes": 7168,
+      "index_bytes": 7213,
+      "build_ms": 0.016400008462369442,
+      "query_ms_median": 0.0006300047971308231,
+      "query_ms_p95": 0.0006805045995861292,
+      "by_modality": {
+        "text": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        "code": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "image": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "audio": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "video": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        "mixed": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      },
+      "per_query": [
+        {
+          "query": "What causes the northern lights?",
+          "modality": "text",
+          "ranking": [
+            "aurora.md",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "bell.wav",
+            "door.png",
+            "mountain.png",
+            "ocean.png",
+            "normalize.py",
+            "ocean.md",
+            "sailboat.mp4",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "A sailboat on the blue ocean",
+          "modality": "mixed",
+          "ranking": [
+            "ocean.md",
+            "ocean.png",
+            "sailboat.mp4",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "mountain.png",
+            "bell.wav",
+            "normalize.py",
+            "door.png",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A red door",
+          "modality": "image",
+          "ranking": [
+            "door.png",
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "ocean.md",
+            "sailboat.mp4",
+            "noise.wav",
+            "ocean.png",
+            "retry.py",
+            "normalize.py",
+            "mountain.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Snow covered mountains",
+          "modality": "image",
+          "ranking": [
+            "mountain.png",
+            "noise.wav",
+            "ocean.png",
+            "bouncing-ball.mp4",
+            "sailboat.mp4",
+            "aurora.md",
+            "door.png",
+            "bell.wav",
+            "retry.py",
+            "ocean.md",
+            "normalize.py",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "A red ball bouncing",
+          "modality": "video",
+          "ranking": [
+            "bouncing-ball.mp4",
+            "sailboat.mp4",
+            "noise.wav",
+            "door.png",
+            "ocean.png",
+            "bell.wav",
+            "ocean.md",
+            "mountain.png",
+            "retry.py",
+            "normalize.py",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "A ringing bell",
+          "modality": "audio",
+          "ranking": [
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "door.png",
+            "ocean.md",
+            "noise.wav",
+            "sailboat.mp4",
+            "ocean.png",
+            "aurora.md",
+            "retry.py",
+            "mountain.png",
+            "normalize.py",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "Random static white noise",
+          "modality": "audio",
+          "ranking": [
+            "noise.wav",
+            "ocean.md",
+            "bell.wav",
+            "retry.py",
+            "bouncing-ball.mp4",
+            "sailboat.mp4",
+            "ocean.png",
+            "normalize.py",
+            "mountain.png",
+            "door.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Find the function that retries failed API requests",
+          "modality": "code",
+          "ranking": [
+            "retry.py",
+            "noise.wav",
+            "bell.wav",
+            "deployment.md",
+            "bouncing-ball.mp4",
+            "sailboat.mp4",
+            "door.png",
+            "ocean.png",
+            "normalize.py",
+            "mountain.png",
+            "ocean.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Normalize a vector to unit length",
+          "modality": "code",
+          "ranking": [
+            "normalize.py",
+            "noise.wav",
+            "door.png",
+            "bouncing-ball.mp4",
+            "ocean.png",
+            "mountain.png",
+            "sailboat.mp4",
+            "retry.py",
+            "ocean.md",
+            "deployment.md",
+            "bell.wav",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "How to roll back a production deployment",
+          "modality": "text",
+          "ranking": [
+            "deployment.md",
+            "retry.py",
+            "door.png",
+            "noise.wav",
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "normalize.py",
+            "ocean.png",
+            "aurora.md",
+            "mountain.png",
+            "sailboat.mp4",
+            "ocean.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        }
+      ]
+    },
+    {
+      "dimension": 128,
+      "index": "HNSW",
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "top3_overlap_with_768": 0.8,
+      "vector_bytes": 7168,
+      "index_bytes": 9506,
+      "build_ms": 0.08749996777623892,
+      "query_ms_median": 0.0009500072337687016,
+      "query_ms_p95": 0.0010999973164871335,
+      "by_modality": {
+        "text": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        "code": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "image": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "audio": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.8333333333333333
+        },
+        "video": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        "mixed": {
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        }
+      },
+      "per_query": [
+        {
+          "query": "What causes the northern lights?",
+          "modality": "text",
+          "ranking": [
+            "aurora.md",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "bell.wav",
+            "door.png",
+            "mountain.png",
+            "ocean.png",
+            "normalize.py",
+            "ocean.md",
+            "sailboat.mp4",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "A sailboat on the blue ocean",
+          "modality": "mixed",
+          "ranking": [
+            "ocean.md",
+            "ocean.png",
+            "sailboat.mp4",
+            "noise.wav",
+            "bouncing-ball.mp4",
+            "retry.py",
+            "mountain.png",
+            "bell.wav",
+            "normalize.py",
+            "door.png",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "A red door",
+          "modality": "image",
+          "ranking": [
+            "door.png",
+            "bouncing-ball.mp4",
+            "bell.wav",
+            "ocean.md",
+            "sailboat.mp4",
+            "noise.wav",
+            "ocean.png",
+            "retry.py",
+            "normalize.py",
+            "mountain.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Snow covered mountains",
+          "modality": "image",
+          "ranking": [
+            "mountain.png",
+            "noise.wav",
+            "ocean.png",
+            "bouncing-ball.mp4",
+            "sailboat.mp4",
+            "aurora.md",
+            "door.png",
+            "bell.wav",
+            "retry.py",
+            "ocean.md",
+            "normalize.py",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "A red ball bouncing",
+          "modality": "video",
+          "ranking": [
+            "bouncing-ball.mp4",
+            "sailboat.mp4",
+            "noise.wav",
+            "door.png",
+            "ocean.png",
+            "bell.wav",
+            "ocean.md",
+            "mountain.png",
+            "retry.py",
+            "normalize.py",
+            "deployment.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "A ringing bell",
+          "modality": "audio",
+          "ranking": [
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "door.png",
+            "ocean.md",
+            "noise.wav",
+            "sailboat.mp4",
+            "ocean.png",
+            "aurora.md",
+            "retry.py",
+            "mountain.png",
+            "normalize.py",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "Random static white noise",
+          "modality": "audio",
+          "ranking": [
+            "noise.wav",
+            "ocean.md",
+            "bell.wav",
+            "retry.py",
+            "bouncing-ball.mp4",
+            "sailboat.mp4",
+            "ocean.png",
+            "normalize.py",
+            "mountain.png",
+            "door.png",
+            "aurora.md",
+            "deployment.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Find the function that retries failed API requests",
+          "modality": "code",
+          "ranking": [
+            "retry.py",
+            "noise.wav",
+            "bell.wav",
+            "deployment.md",
+            "bouncing-ball.mp4",
+            "sailboat.mp4",
+            "door.png",
+            "ocean.png",
+            "normalize.py",
+            "mountain.png",
+            "ocean.md",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 1.0
+        },
+        {
+          "query": "Normalize a vector to unit length",
+          "modality": "code",
+          "ranking": [
+            "normalize.py",
+            "noise.wav",
+            "door.png",
+            "bouncing-ball.mp4",
+            "ocean.png",
+            "mountain.png",
+            "sailboat.mp4",
+            "retry.py",
+            "ocean.md",
+            "deployment.md",
+            "bell.wav",
+            "aurora.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        },
+        {
+          "query": "How to roll back a production deployment",
+          "modality": "text",
+          "ranking": [
+            "deployment.md",
+            "retry.py",
+            "door.png",
+            "noise.wav",
+            "bell.wav",
+            "bouncing-ball.mp4",
+            "normalize.py",
+            "ocean.png",
+            "aurora.md",
+            "mountain.png",
+            "sailboat.mp4",
+            "ocean.md"
+          ],
+          "recall_at_3": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_3": 1.0,
+          "top3_overlap_with_768": 0.6666666666666666
+        }
+      ]
+    }
+  ],
+  "image_queries": [
+    {
+      "query": "mountain.png",
+      "top3_excluding_self": [
+        "ocean.png",
+        "sailboat.mp4",
+        "bouncing-ball.mp4"
+      ]
+    },
+    {
+      "query": "door.png",
+      "top3_excluding_self": [
+        "bouncing-ball.mp4",
+        "ocean.png",
+        "mountain.png"
+      ]
+    },
+    {
+      "query": "ocean.png",
+      "top3_excluding_self": [
+        "sailboat.mp4",
+        "mountain.png",
+        "door.png"
+      ]
+    }
+  ],
+  "prompt_ablation": [
+    {
+      "prompt": "SearchQuery",
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0
+    },
+    {
+      "prompt": "no prefix",
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.4,
+      "mrr": 0.9333333333333332,
+      "ndcg_at_3": 0.95
+    }
+  ],
+  "code_prompt_ablation": [
+    {
+      "query": "Find the function that retries failed API requests",
+      "ranking": [
+        "retry.py",
+        "noise.wav",
+        "bell.wav",
+        "bouncing-ball.mp4",
+        "normalize.py",
+        "deployment.md",
+        "sailboat.mp4",
+        "ocean.md",
+        "door.png",
+        "mountain.png",
+        "ocean.png",
+        "aurora.md"
+      ],
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333333333333333,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0
+    },
+    {
+      "query": "Normalize a vector to unit length",
+      "ranking": [
+        "normalize.py",
+        "noise.wav",
+        "mountain.png",
+        "ocean.png",
+        "sailboat.mp4",
+        "bell.wav",
+        "bouncing-ball.mp4",
+        "retry.py",
+        "door.png",
+        "ocean.md",
+        "deployment.md",
+        "aurora.md"
+      ],
+      "recall_at_3": 1.0,
+      "precision_at_3": 0.3333333333333333,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0
+    }
+  ]
+}

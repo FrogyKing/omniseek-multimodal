@@ -1,0 +1,294 @@
+{
+  "model_revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+  "records": [
+    {
+      "name": "aurora.md",
+      "metadata": {
+        "lines": 2
+      },
+      "segments": [
+        {
+          "text": "# The northern lights\nSolar particles collide with gases in Earth's atmosphere. These collisions create green and purple auroras near the magnetic poles.",
+          "line_start": 1,
+          "line_end": 2
+        }
+      ],
+      "offset": 0,
+      "count": 1,
+      "sha256": "86530f886c454caa618528dec064f9e0e93ed147749b8439d6d65969bcc100cb"
+    },
+    {
+      "name": "ocean.md",
+      "metadata": {
+        "lines": 2
+      },
+      "segments": [
+        {
+          "text": "# Ocean field notes\nA white sailboat crosses a calm blue ocean. Wind fills its sails. Waves ripple across the sea below a clear blue sky.",
+          "line_start": 1,
+          "line_end": 2
+        }
+      ],
+      "offset": 1,
+      "count": 1,
+      "sha256": "870fa19c49cc8322810f835ac56dd0fbde41e8c4d711db3511d35ff36528519f"
+    },
+    {
+      "name": "deployment.md",
+      "metadata": {
+        "lines": 2
+      },
+      "segments": [
+        {
+          "text": "# Release procedure\nBuild and test before deploying. Keep a previous release available for rollback. Monitor errors and latency after a production release.",
+          "line_start": 1,
+          "line_end": 2
+        }
+      ],
+      "offset": 2,
+      "count": 1,
+      "sha256": "4e05e71d64c8bfee51047c074c43bd3de7b12b18b810640a81fa19907011c82f"
+    },
+    {
+      "name": "retry.py",
+      "metadata": {
+        "lines": 11
+      },
+      "segments": [
+        {
+          "text": "\"\"\"Retry failed API requests with exponential backoff.\"\"\"\nimport time\n",
+          "line_start": 1,
+          "line_end": 3
+        },
+        {
+          "text": "def retry_request(request, attempts=3):\n    for attempt in range(attempts):\n        try:\n            return request()\n        except ConnectionError:\n            if attempt == attempts - 1:\n                raise\n            time.sleep(2 ** attempt)",
+          "line_start": 4,
+          "line_end": 11
+        }
+      ],
+      "offset": 3,
+      "count": 2,
+      "sha256": "23641afe4500fd3ce5cd6557bf9c254e3c84c46336c83198c3b016dd20cb3119"
+    },
+    {
+      "name": "normalize.py",
+      "metadata": {
+        "lines": 8
+      },
+      "segments": [
+        {
+          "text": "\"\"\"Normalize vectors for cosine similarity.\"\"\"\nimport numpy as np\n",
+          "line_start": 1,
+          "line_end": 3
+        },
+        {
+          "text": "def normalize_vector(vector):\n    norm = np.linalg.norm(vector)\n    if norm == 0:\n        raise ValueError(\"zero vector\")\n    return vector / norm",
+          "line_start": 4,
+          "line_end": 8
+        }
+      ],
+      "offset": 5,
+      "count": 2,
+      "sha256": "9c02b7f2c7488f1d7649a0cfaae1a9ffac772e47c86c1b2fb40ff0dfc497e0c5"
+    },
+    {
+      "name": "mountain.png",
+      "metadata": {
+        "width": 640,
+        "height": 400
+      },
+      "segments": [
+        {
+          "text": "mountain.png"
+        }
+      ],
+      "offset": 7,
+      "count": 1,
+      "sha256": "d0ffbcd0329e1407f79b3d075cbebae5c8a53193a1ef55b607dfe099b984adc6"
+    },
+    {
+      "name": "door.png",
+      "metadata": {
+        "width": 640,
+        "height": 400
+      },
+      "segments": [
+        {
+          "text": "door.png"
+        }
+      ],
+      "offset": 8,
+      "count": 1,
+      "sha256": "46a12ee741c6117fb23eab05b4ebe71d20065efe617512c245a03a6859a1cc70"
+    },
+    {
+      "name": "ocean.png",
+      "metadata": {
+        "width": 640,
+        "height": 400
+      },
+      "segments": [
+        {
+          "text": "ocean.png"
+        }
+      ],
+      "offset": 9,
+      "count": 1,
+      "sha256": "71f6d71d8004424b69ec130e654d40ba942d186c96ce30e4d2422df844f1a498"
+    },
+    {
+      "name": "bell.wav",
+      "metadata": {
+        "duration": 3.0,
+        "sample_rate": 16000
+      },
+      "segments": [
+        {
+          "text": "bell.wav",
+          "start": 0.0,
+          "end": 3.0
+        }
+      ],
+      "offset": 10,
+      "count": 1,
+      "sha256": "7223fd5acf75bf8fb5468609c505ed8bb6e9caab216db860ab0f50a6567fa689"
+    },
+    {
+      "name": "noise.wav",
+      "metadata": {
+        "duration": 3.0,
+        "sample_rate": 16000
+      },
+      "segments": [
+        {
+          "text": "noise.wav",
+          "start": 0.0,
+          "end": 3.0
+        }
+      ],
+      "offset": 11,
+      "count": 1,
+      "sha256": "436231fe4cca273b051dd441cf60b9529a6a88f5909e6a463809da516fbedac8"
+    },
+    {
+      "name": "bouncing-ball.mp4",
+      "metadata": {
+        "duration": 4.0,
+        "width": 640,
+        "height": 400,
+        "sampling_fps": 1,
+        "segmentation": "fixed windows"
+      },
+      "segments": [
+        {
+          "text": "bouncing-ball.mp4",
+          "start": 0.0,
+          "end": 4.0
+        }
+      ],
+      "offset": 12,
+      "count": 1,
+      "sha256": "3e5a088a64286e43cb30606ba6bdcba556dc0d63a8b9efc912974bf7a025c364"
+    },
+    {
+      "name": "sailboat.mp4",
+      "metadata": {
+        "duration": 4.0,
+        "width": 640,
+        "height": 400,
+        "sampling_fps": 1,
+        "segmentation": "fixed windows"
+      },
+      "segments": [
+        {
+          "text": "sailboat.mp4",
+          "start": 0.0,
+          "end": 4.0
+        }
+      ],
+      "offset": 13,
+      "count": 1,
+      "sha256": "b4da53bf11bd86ea0e7dbb5c3579317566de4d06f0e9e18fd512caf45fa9394c"
+    }
+  ],
+  "measurements": {
+    "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+    "dimension": 768,
+    "config": "full",
+    "dtype": "torch.bfloat16",
+    "gpu": "NVIDIA L4",
+    "load_seconds": 7.129691633,
+    "total_seconds": 10.906213647999998,
+    "peak_vram_bytes": 1808645120,
+    "batches": [
+      {
+        "kind": "text",
+        "count": 4,
+        "seconds": 0.9739225329999996
+      },
+      {
+        "kind": "text",
+        "count": 3,
+        "seconds": 0.11322571799999892
+      },
+      {
+        "kind": "image",
+        "count": 3,
+        "seconds": 0.5602856359999997
+      },
+      {
+        "kind": "audio",
+        "count": 2,
+        "seconds": 1.0791283669999991
+      },
+      {
+        "kind": "video",
+        "count": 2,
+        "seconds": 0.4101697619999989
+      },
+      {
+        "kind": "text",
+        "count": 4,
+        "seconds": 0.07852651500000007
+      },
+      {
+        "kind": "text",
+        "count": 4,
+        "seconds": 0.09146581700000311
+      },
+      {
+        "kind": "text",
+        "count": 2,
+        "seconds": 0.07992946800000311
+      },
+      {
+        "kind": "text",
+        "count": 2,
+        "seconds": 0.0826991200000009
+      },
+      {
+        "kind": "text",
+        "count": 4,
+        "seconds": 0.07845370699999776
+      },
+      {
+        "kind": "text",
+        "count": 4,
+        "seconds": 0.08416298999999938
+      },
+      {
+        "kind": "text",
+        "count": 2,
+        "seconds": 0.08102003300000149
+      }
+    ],
+    "batch_size": 4,
+    "parameters": 744371488,
+    "wall_seconds": 41.75215890002437,
+    "billing_before_usd": 0.0
+  },
+  "query_count": 10,
+  "corpus_count": 14,
+  "gpu": "L4",
+  "benchmark": true
+}

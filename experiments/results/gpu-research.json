@@ -1,0 +1,255 @@
+{
+  "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+  "gpu": "Tesla T4",
+  "dtype": "torch.float32",
+  "total_seconds": 30.388628175,
+  "batching": [
+    {
+      "batch_size": 1,
+      "items": 8,
+      "repeats": 5,
+      "median_seconds": 0.28570533099999906,
+      "items_per_second": 28.000877589505063
+    },
+    {
+      "batch_size": 2,
+      "items": 8,
+      "repeats": 5,
+      "median_seconds": 0.14852654799999954,
+      "items_per_second": 53.862424648824565
+    },
+    {
+      "batch_size": 4,
+      "items": 8,
+      "repeats": 5,
+      "median_seconds": 0.08637321499999828,
+      "items_per_second": 92.62130626954385
+    },
+    {
+      "batch_size": 8,
+      "items": 8,
+      "repeats": 5,
+      "median_seconds": 0.04981823700000021,
+      "items_per_second": 160.58376373294715
+    }
+  ],
+  "encoder_compatibility": [
+    {
+      "config": "text",
+      "parameters": 271002624,
+      "max_abs_delta": 0.0,
+      "minimum_cosine_with_full": 0.9999999403953552,
+      "load_and_encode_seconds": 3.8424751069999985
+    },
+    {
+      "config": "vision",
+      "parameters": 438760448,
+      "max_abs_delta": 0.0,
+      "minimum_cosine_with_full": 1.0,
+      "load_and_encode_seconds": 5.101728876999996
+    },
+    {
+      "config": "audio",
+      "parameters": 576613664,
+      "max_abs_delta": 0.0,
+      "minimum_cosine_with_full": 1.0,
+      "load_and_encode_seconds": 6.013430063000001
+    }
+  ],
+  "video": [
+    {
+      "strategy": "native_full_clip",
+      "intervals": [
+        [
+          0,
+          4
+        ]
+      ],
+      "matches": [
+        {
+          "query": "task: search result | query: A red ball bouncing",
+          "start": 0,
+          "end": 4,
+          "score": 0.6906673908233643
+        },
+        {
+          "query": "task: search result | query: A sailboat on the blue ocean",
+          "start": 0,
+          "end": 4,
+          "score": 0.7411984205245972
+        }
+      ]
+    },
+    {
+      "strategy": "fixed_1s",
+      "intervals": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "matches": [
+        {
+          "query": "task: search result | query: A red ball bouncing",
+          "start": 1,
+          "end": 2,
+          "score": 0.7073198556900024
+        },
+        {
+          "query": "task: search result | query: A sailboat on the blue ocean",
+          "start": 3,
+          "end": 4,
+          "score": 0.7854486703872681
+        }
+      ]
+    },
+    {
+      "strategy": "fixed_2s",
+      "intervals": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "matches": [
+        {
+          "query": "task: search result | query: A red ball bouncing",
+          "start": 0,
+          "end": 2,
+          "score": 0.7171815633773804
+        },
+        {
+          "query": "task: search result | query: A sailboat on the blue ocean",
+          "start": 2,
+          "end": 4,
+          "score": 0.7868912816047668
+        }
+      ]
+    },
+    {
+      "strategy": "scene_mean_rgb",
+      "intervals": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "matches": [
+        {
+          "query": "task: search result | query: A red ball bouncing",
+          "start": 0,
+          "end": 2,
+          "score": 0.7171815633773804
+        },
+        {
+          "query": "task: search result | query: A sailboat on the blue ocean",
+          "start": 2,
+          "end": 4,
+          "score": 0.7868912816047668
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "window_seconds": 1.5,
+      "intervals": [
+        [
+          0.0,
+          1.5
+        ],
+        [
+          1.5,
+          3.0
+        ],
+        [
+          3.0,
+          4.5
+        ],
+        [
+          4.5,
+          6.0
+        ]
+      ],
+      "matches": [
+        {
+          "start": 0.0,
+          "end": 1.5,
+          "score": 0.7273727655410767
+        },
+        {
+          "start": 3.0,
+          "end": 4.5,
+          "score": 0.6887784004211426
+        }
+      ]
+    },
+    {
+      "window_seconds": 3.0,
+      "intervals": [
+        [
+          0.0,
+          3.0
+        ],
+        [
+          3.0,
+          6.0
+        ]
+      ],
+      "matches": [
+        {
+          "start": 0.0,
+          "end": 3.0,
+          "score": 0.7336443662643433
+        },
+        {
+          "start": 3.0,
+          "end": 6.0,
+          "score": 0.6999843120574951
+        }
+      ]
+    },
+    {
+      "window_seconds": 6.0,
+      "intervals": [
+        [
+          0.0,
+          6.0
+        ]
+      ],
+      "matches": [
+        {
+          "start": 0.0,
+          "end": 6.0,
+          "score": 0.7246613502502441
+        },
+        {
+          "start": 0.0,
+          "end": 6.0,
+          "score": 0.6783443689346313
+        }
+      ]
+    }
+  ],
+  "notes": "One synthetic transition and two generated sounds; diagnostic, not a validated segmentation benchmark."
+}
