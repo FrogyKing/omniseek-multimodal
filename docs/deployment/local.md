@@ -94,6 +94,9 @@ start the API automatically. For an isolated test run, choose a separate
 command excludes marked GPU tests. Only
 `uv run pytest -m gpu -o addopts=''` invokes the explicitly billable live test.
 CI never provides cloud credentials or enables GPU execution.
+Browser screenshots normally go to ignored test output. Set
+`OMNISEEK_CAPTURE_DOCS=1` when running the browser suite to refresh the README
+screenshots deliberately.
 
 `uv run python scripts/live_validation.py` is a separate, explicitly billable
 integration check. It uploads disposable original fixtures, indexes five

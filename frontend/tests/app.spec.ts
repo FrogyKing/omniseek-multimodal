@@ -1,6 +1,14 @@
 import { expect, test } from "@playwright/test";
 import path from "node:path";
 
+const screenshot = (name: string) =>
+  path.resolve(
+    process.env.OMNISEEK_CAPTURE_DOCS === "1"
+      ? "../docs/screenshots"
+      : "test-results/screenshots",
+    name,
+  );
+
 test("real cached cross-modal search, preview, dimension, and research view", async ({
   page,
 }) => {
@@ -10,7 +18,7 @@ test("real cached cross-modal search, preview, dimension, and research view", as
   ).toBeVisible();
   await expect(page.getByText("14 segments indexed")).toBeVisible();
   await page.screenshot({
-    path: "../docs/screenshots/search-home.png",
+    path: screenshot("search-home.png"),
     fullPage: true,
   });
   await page.getByLabel("Search your knowledge").press("Enter");
@@ -20,7 +28,7 @@ test("real cached cross-modal search, preview, dimension, and research view", as
     /ocean|sailboat/,
   );
   await page.screenshot({
-    path: "../docs/screenshots/search-results.png",
+    path: screenshot("search-results.png"),
     fullPage: true,
   });
   await page
@@ -37,8 +45,28 @@ test("real cached cross-modal search, preview, dimension, and research view", as
   );
   await page.getByLabel("Close preview").click();
   await page.getByLabel("Embedding dimension").selectOption("128");
-  await page.getByLabel("Search your knowledge").press("Enter");
   await expect(page.locator(".results-meta")).toContainText("128d");
+  const filtered = page.waitForResponse(
+    (r) =>
+      r.url().endsWith("/api/search") &&
+      r.request().postDataJSON().modality === "image",
+  );
+  await page.getByRole("button", { name: "Images", exact: true }).click();
+  expect(
+    (await (await filtered).json()).results.every(
+      (r: { modality: string }) => r.modality === "image",
+    ),
+  ).toBe(true);
+  await expect(page.locator(".result-card")).toHaveCount(3);
+  const collectionFiltered = page.waitForResponse(
+    (r) =>
+      r.url().endsWith("/api/search") &&
+      !!r.request().postDataJSON().collection_id,
+  );
+  await page
+    .getByLabel("Search collection")
+    .selectOption({ label: "Signal / demo collection" });
+  expect((await (await collectionFiltered).json()).results).toHaveLength(3);
   await page
     .getByRole("button", { name: "Embedding lab", exact: false })
     .click();
@@ -47,7 +75,7 @@ test("real cached cross-modal search, preview, dimension, and research view", as
   ).toBeVisible();
   await expect(page.locator(".experiment-table tbody tr")).toHaveCount(4);
   await page.screenshot({
-    path: "../docs/screenshots/embedding-lab.png",
+    path: screenshot("embedding-lab.png"),
     fullPage: true,
   });
 });
@@ -133,7 +161,7 @@ test("mobile search remains usable without horizontal page overflow", async ({
   }));
   expect(dimensions.scroll).toBeLessThanOrEqual(dimensions.width);
   await page.screenshot({
-    path: "../docs/screenshots/mobile-search.png",
+    path: screenshot("mobile-search.png"),
     fullPage: true,
   });
 });

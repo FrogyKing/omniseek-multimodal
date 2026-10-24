@@ -117,6 +117,10 @@ export default function App() {
   const [modality, setModality] = useState<(typeof modalities)[number]>("all");
   const [dimension, setDimension] = useState(768);
   const [response, setResponse] = useState<SearchResponse | null>(null);
+  const [lastSearch, setLastSearch] = useState<{
+    text: string;
+    imageId?: string;
+  } | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
@@ -182,6 +186,8 @@ export default function App() {
     text = query,
     imageId?: string,
     searchModality = modality,
+    searchDimension = dimension,
+    searchCollection = collectionId,
   ) => {
     setBusy(true);
     setError("");
@@ -190,12 +196,13 @@ export default function App() {
       const result = await post<SearchResponse>("/search", {
         query: imageId ? "" : text,
         image_file_id: imageId,
-        collection_id: collectionId || null,
+        collection_id: searchCollection || null,
         modality: searchModality === "all" ? null : searchModality,
-        dimension,
+        dimension: searchDimension,
         k: 18,
       });
       setResponse(result);
+      setLastSearch({ text, imageId });
     } catch (err) {
       setError((err as Error).message);
     } finally {
@@ -513,7 +520,7 @@ export default function App() {
                   className="search-form"
                   onSubmit={(e) => {
                     e.preventDefault();
-                    void runSearch();
+                    void runSearch(query, lastSearch?.imageId);
                   }}
                 >
                   <Search size={22} strokeWidth={1.6} />
@@ -522,7 +529,10 @@ export default function App() {
                     aria-label="Search your knowledge"
                     placeholder="Describe what you're looking for…"
                     value={query}
-                    onChange={(e) => setQuery(e.target.value)}
+                    onChange={(e) => {
+                      setQuery(e.target.value);
+                      setLastSearch(null);
+                    }}
                   />
                   <button
                     className="icon-button image-query"
@@ -552,7 +562,18 @@ export default function App() {
                     <select
                       aria-label="Search collection"
                       value={collectionId}
-                      onChange={(e) => setCollectionId(e.target.value)}
+                      onChange={(e) => {
+                        const next = e.target.value;
+                        setCollectionId(next);
+                        if (lastSearch)
+                          void runSearch(
+                            lastSearch.text,
+                            lastSearch.imageId,
+                            modality,
+                            dimension,
+                            next,
+                          );
+                      }}
                     >
                       <option value="">All collections</option>
                       {collections.map((c) => (
@@ -571,7 +592,17 @@ export default function App() {
                     <select
                       aria-label="Embedding dimension"
                       value={dimension}
-                      onChange={(e) => setDimension(Number(e.target.value))}
+                      onChange={(e) => {
+                        const next = Number(e.target.value);
+                        setDimension(next);
+                        if (lastSearch)
+                          void runSearch(
+                            lastSearch.text,
+                            lastSearch.imageId,
+                            modality,
+                            next,
+                          );
+                      }}
                     >
                       {[768, 512, 256, 128].map((d) => (
                         <option value={d} key={d}>
@@ -605,7 +636,15 @@ export default function App() {
                       <button
                         key={m}
                         className={modality === m ? "selected" : ""}
-                        onClick={() => setModality(m)}
+                        onClick={() => {
+                          setModality(m);
+                          if (lastSearch)
+                            void runSearch(
+                              lastSearch.text,
+                              lastSearch.imageId,
+                              m,
+                            );
+                        }}
                       >
                         <Icon size={15} />
                         {plural[m]}
